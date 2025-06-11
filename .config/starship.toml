@@ -1,0 +1,21 @@
+format = '''
+[ vbnwe ](white)$directory$rust$package[  ](fg:white)$time[ > ](fg:white)'''
+
+
+
+# Wait 10 milliseconds for starship to check files under the current directory.
+
+
+# Disable the blank line at the start of the prompt
+add_newline = false
+
+# ~/.config/starship.toml
+
+[time]
+format = "[$time]($style)"
+time_format = "%H:%M"
+style = "white"
+disabled = false
+
+[directory]
+format = "[$path](fg:yellow)"
